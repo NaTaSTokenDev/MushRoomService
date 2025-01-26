@@ -169,7 +169,7 @@ function App() {
                   </div>
                 </div>
               </div>
-              <div className="bg-gray-200 h-[400px] rounded-lg">
+              <div>
                 <div className="text-white">
                   <h1 className="text-5xl font-bold mb-4">MushRoomService</h1>
                   <p className="text-xl mb-8">Fresh Mushrooms & Professional Growing Supplies in Edenton, NC</p>
@@ -189,10 +189,14 @@ function App() {
                     Coir Bricks on Amazon - Here
                   </a>
                 </div>
-                <div className="w-full h-full flex items-center justify-center text-gray-500">
-                  Add company image here
+              
+                <img
+                src={yourImage}
+                alt="Mushroom Service Logo"
+                className="mb-6 mx-auto max-w-sm rounded-lg shadow-lg"
+              />
                 </div>
-              </div>
+             
             </div>
           </div>
         </section>
