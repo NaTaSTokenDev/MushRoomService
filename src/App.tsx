@@ -149,7 +149,7 @@ function App() {
               <div>
                 <h2 className="text-3xl font-bold text-amber-900 mb-6">About MushRoomService</h2>
                 <p className="text-gray-700 mb-4">
-                  Located in the heart of Edenton, North Carolina, MushRoomService is your premier source for fresh gourmet mushrooms and professional cultivation supplies.
+                  Located in Edenton, North Carolina, MushRoomService is your premier source for fresh gourmet mushrooms and professional cultivation supplies.
                 </p>
                 <p className="text-gray-700 mb-4">
                   Our state-of-the-art growing facility produces the highest quality mushrooms, while our shop provides everything you need to start your own cultivation journey.
@@ -157,15 +157,15 @@ function App() {
                 <div className="space-y-4 mt-8">
                   <div className="flex items-center">
                     <MapPin className="w-5 h-5 text-amber-600 mr-3" />
-                    <span>123 Mushroom Lane, Edenton, NC 27932</span>
+                    <span>Edenton, NC 27932</span>
                   </div>
                   <div className="flex items-center">
                     <Phone className="w-5 h-5 text-amber-600 mr-3" />
-                    <span>(555) 123-4567</span>
+                    <span>(252) 862-7223</span>
                   </div>
                   <div className="flex items-center">
                     <Mail className="w-5 h-5 text-amber-600 mr-3" />
-                    <span>info@mushroomservice.com</span>
+                    <span>mushroomservice@gmail.com</span>
                   </div>
                 </div>
               </div>
@@ -179,13 +179,14 @@ function App() {
                   >
                     Shop Now
                   </button>
+                  <br></br>
                   <a
                     href="https://amzn.to/40POY6h"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="inline-block mt-4 text-amber-400 underline hover:text-amber-500"
                   >
-                    Check out our affiliate store!
+                    Coir Bricks on Amazon
                   </a>
                 </div>
                 <div className="w-full h-full flex items-center justify-center text-gray-500">
