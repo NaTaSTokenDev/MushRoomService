@@ -186,7 +186,7 @@ function App() {
                     rel="noopener noreferrer"
                     className="inline-block mt-4 text-amber-400 underline hover:text-amber-500"
                   >
-                    Coir Bricks on Amazon
+                    Coir Bricks on Amazon - Here
                   </a>
                 </div>
                 <div className="w-full h-full flex items-center justify-center text-gray-500">
