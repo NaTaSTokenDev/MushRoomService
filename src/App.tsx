@@ -9,6 +9,8 @@ import { Plus, Search, Shield, Menu, X, MapPin, Phone, Mail, Sprout, Book, Shopp
 import { Navbar } from './components/Navbar';
 import { Footer } from './components/Footer';
 import { ProductCard } from './components/ProductCard';
+import yourImage from './images/mushroomservicelogo.png';
+
 
 function App() {
   const [recipes, setRecipes] = useState<Recipe[]>(defaultRecipes);
@@ -77,8 +79,8 @@ function App() {
 
   return (
     <div className="min-h-screen bg-amber-50">
-      <Navbar 
-        activeSection={activeSection} 
+      <Navbar
+        activeSection={activeSection}
         setActiveSection={setActiveSection}
         mobileMenuOpen={mobileMenuOpen}
         setMobileMenuOpen={setMobileMenuOpen}
@@ -92,9 +94,13 @@ function App() {
           <div className="absolute inset-0 bg-black/40" />
           <div className="relative max-w-7xl mx-auto px-4 h-full flex items-center">
             <div className="text-white">
-              <h1 className="text-5xl font-bold mb-4">MushRoomService</h1>
+              <img
+                src={yourImage}
+                alt="Mushroom Service Logo"
+                className="mb-6 mx-auto max-w-sm rounded-lg shadow-lg"
+              />
               <p className="text-xl mb-8">Fresh Mushrooms & Professional Growing Supplies in Edenton, NC</p>
-              <button 
+              <button
                 onClick={() => setActiveSection('shop')}
                 className="bg-amber-600 text-white px-8 py-3 rounded-md hover:bg-amber-700 transition-colors"
               >
@@ -164,7 +170,24 @@ function App() {
                 </div>
               </div>
               <div className="bg-gray-200 h-[400px] rounded-lg">
-                {/* Placeholder for about page image */}
+                <div className="text-white">
+                  <h1 className="text-5xl font-bold mb-4">MushRoomService</h1>
+                  <p className="text-xl mb-8">Fresh Mushrooms & Professional Growing Supplies in Edenton, NC</p>
+                  <button
+                    onClick={() => setActiveSection('shop')}
+                    className="bg-amber-600 text-white px-8 py-3 rounded-md hover:bg-amber-700 transition-colors"
+                  >
+                    Shop Now
+                  </button>
+                  <a
+                    href="https://amzn.to/40POY6h"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-block mt-4 text-amber-400 underline hover:text-amber-500"
+                  >
+                    Check out our affiliate store!
+                  </a>
+                </div>
                 <div className="w-full h-full flex items-center justify-center text-gray-500">
                   Add company image here
                 </div>
@@ -276,11 +299,10 @@ function App() {
                       <button
                         key={category.id}
                         onClick={() => setSelectedCategory(category.id as Recipe['category'] | 'all')}
-                        className={`w-full text-left px-4 py-2 rounded-md transition-colors ${
-                          selectedCategory === category.id
-                            ? 'bg-amber-700 text-white'
-                            : 'hover:bg-amber-100 text-amber-900'
-                        }`}
+                        className={`w-full text-left px-4 py-2 rounded-md transition-colors ${selectedCategory === category.id
+                          ? 'bg-amber-700 text-white'
+                          : 'hover:bg-amber-100 text-amber-900'
+                          }`}
                       >
                         <span>{category.label}</span>
                         <span className="float-right bg-amber-100 text-amber-800 px-2 py-0.5 rounded-full text-xs">
